@@ -50,9 +50,9 @@ app.use((error, req, res, next) => {
 
 mongoose
   .connect(
-    "mongodb+srv://21ucs179:sameer123@cluster0.5tuo184.mongodb.net/?retryWrites=true&w=majorityappName=Cluster0"
+    // "mongodb+srv://21ucs179:sameer123@cluster0.5tuo184.mongodb.net/?retryWrites=true&w=majorityappName=Cluster0"
 //  `${process.env.database}`
-    // `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.5tuo184.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
+    `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.5tuo184.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`
     
 
   )
