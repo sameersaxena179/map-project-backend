@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const placesRoutes = require('./routes/places-routes');
 const usersRoutes = require('./routes/users-routes');
 const HttpError = require('./models/http-error');
+const PORT=process.env.PORT||5000
 
 const app = express();
 
@@ -57,7 +58,7 @@ mongoose
   }
   )
   .then(() => {
-    app.listen(5000);
+    app.listen(PORT);
   })
   .catch(err => {
     console.log(err);
